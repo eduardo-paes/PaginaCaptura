@@ -1,0 +1,45 @@
+.wtp-container {
+  padding: 3rem;
+  background-color: #5a0f34;
+  font-family: 'Raleway', sans-serif;
+  color: #f3f4f4;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.wtp-description {
+  margin-bottom: 1.5rem;
+}
+
+.wtp-title {
+  background-color: #f3f4f4;
+  font-weight: bold;
+  color: #5a0f34;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.wtp-subtitle {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wtp-container {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .wtp-title {
+    margin: 11.5rem auto 1rem auto;
+    font-size: 1.5rem;
+  }
+
+  .wtp-description {
+    margin: 2rem 0 1rem 0;
+    line-height: 1.5;
+  }
+}

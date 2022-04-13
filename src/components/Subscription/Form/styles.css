@@ -1,0 +1,11 @@
+.register-form {
+  padding: 3rem;
+  background-color: #5a0f34;
+}
+
+@media screen and (max-width: 768px) {
+  .register-form {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+}
