@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import './styles.css';
 import { SubscriptionContainer, SubscriptionFooter, SubscriptionForm, SubscriptionHeader, WhatsappGroup } from '../../components';
 
 const nomeProduto = "Viva Leve e Plena";
 const descricaoProduto = "Descubra o passo a passo prático e eficaz para emagrecer, se livrar do inchaço abdominal e acabar de vez com a TPM começando pelo tratamento do seu intestino.";
-const descricaoFinal = "Método prático e eficaz para perder peso, se livrar do inchaço abdominal e acabar de vez com a TPM.";
+const descricaoFinal = "Desperte seu intestino e livre-se da TPM.";
 const dataEvento = () => {
   return (
     <p>
