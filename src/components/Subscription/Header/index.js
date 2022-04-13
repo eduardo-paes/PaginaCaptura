@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import { Grid } from '@material-ui/core';
 
-export default function SubscriptionHeader({nomeProduto, descricaoProduto}) {
+export default function SubscriptionHeader({nomeProduto, descricaoProduto, dataEvento}) {
   return (
     <div className='register-title'>
       <Grid container>
@@ -17,9 +17,7 @@ export default function SubscriptionHeader({nomeProduto, descricaoProduto}) {
               </h2>
             </Grid>
             <Grid item md={10}>
-              <p>
-                DE <strong>25 A 27</strong> DE ABRIL | ÀS <strong>20H00</strong>
-              </p>
+              { dataEvento() }
             </Grid>
           </Grid>
         </Grid>

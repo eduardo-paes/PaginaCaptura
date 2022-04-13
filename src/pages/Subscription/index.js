@@ -5,7 +5,13 @@ import { SubscriptionContainer, SubscriptionFooter, SubscriptionForm, Subscripti
 const nomeProduto = "Viva Leve e Plena";
 const descricaoProduto = "Descubra o passo a passo prático e eficaz para emagrecer, se livrar do inchaço abdominal e acabar de vez com a TPM começando pelo tratamento do seu intestino.";
 const descricaoFinal = "Método prático e eficaz para perder peso, se livrar do inchaço abdominal e acabar de vez com a TPM.";
-
+const dataEvento = () => {
+  return (
+    <p>
+      DIA <strong>04</strong> DE MAIO | ÀS <strong>20H00</strong>
+    </p>
+  );
+}
 const gruposWhatsapp = [
   "https://chat.whatsapp.com/DnZ3k4CSi3L5DY1vKZxKHU",
   "https://chat.whatsapp.com/KuiG3fl1mOKH1kIS3QilxX",
@@ -17,7 +23,7 @@ export default function Subscription() {
 
   return (
     <SubscriptionContainer>
-      <SubscriptionHeader nomeProduto={nomeProduto} descricaoProduto={descricaoProduto} />
+      <SubscriptionHeader nomeProduto={nomeProduto} descricaoProduto={descricaoProduto} dataEvento={dataEvento} />
       {
         subscribed
           ? <WhatsappGroup checked={subscribed} nomeProduto={nomeProduto} grupos={gruposWhatsapp}/>

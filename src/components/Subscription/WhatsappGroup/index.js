@@ -5,10 +5,17 @@ import { Grid, Slide } from '@material-ui/core';
 import GradientButton from '../GradientButton';
 import { usePushingGutterStyles } from '@mui-treasury/styles/gutter/pushing';
 
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
 export default function WhatsappGroup({checked, nomeProduto, grupos}) {
   const gutterStyles = usePushingGutterStyles({ cssProp: 'marginBottom', space: 2 });
 
-  const handleClick = () => window.open(grupos[Math.floor(Math.random() * (2 - 0 + 1) + 0)], "_blank");
+  const handleClick = () => {
+    let idx =randomIntFromInterval(0, 2);
+    window.open(grupos[idx], "_blank");
+  }
 
   return (
     <Slide direction="left" in={checked} mountOnEnter unmountOnExit>
