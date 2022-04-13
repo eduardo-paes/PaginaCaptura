@@ -6,7 +6,7 @@ import { Button } from '@material-ui/core';
 
 const useBtnStyles = makeStyles({
   root: {
-    minWidth: 200,
+    padding: '1rem',
     transition: '0.3s cubic-bezier(.47,1.64,.41,.8)',
     marginTop: '1rem',
     background:

@@ -20,8 +20,8 @@ export default function Subscription() {
       <SubscriptionHeader nomeProduto={nomeProduto} descricaoProduto={descricaoProduto} />
       {
         subscribed
-          ? <WhatsappGroup nomeProduto={nomeProduto} grupos={gruposWhatsapp}/>
-          : <SubscriptionForm setSubscribed={setSubscribed} />
+          ? <WhatsappGroup checked={subscribed} nomeProduto={nomeProduto} grupos={gruposWhatsapp}/>
+          : <SubscriptionForm checked={subscribed} setSubscribed={setSubscribed} />
       }
       <SubscriptionFooter descricaoFinal={descricaoFinal} />
     </SubscriptionContainer>

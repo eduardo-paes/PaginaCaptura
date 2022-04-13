@@ -4,7 +4,7 @@ import './styles.css';
 import api from '../../../api';
 import colors from '../../../assets/colors';
 
-import { Grid, TextField} from '@material-ui/core';
+import { Grid, Slide, TextField} from '@material-ui/core';
 import { usePushingGutterStyles } from '@mui-treasury/styles/gutter/pushing';
 import { makeStyles } from '@material-ui/core/styles';
 import GradientButton from '../GradientButton';
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SubscriptionForm({ setSubscribed }) {
+export default function SubscriptionForm({ checked, setSubscribed }) {
   const txtStyles = useStyles();
   const gutterStyles = usePushingGutterStyles({ cssProp: 'marginBottom', space: 2 });
   const [subscription, setSubscription] = useState({ name: "", email: "" });
@@ -78,44 +78,46 @@ export default function SubscriptionForm({ setSubscribed }) {
 
   return (
     <div className='register-form'>
-      <Grid container justifyContent='center'>
-        <Grid item xs={12} md={10}>
-          <TextField
-            id='txtName'
-            name='name'
-            variant='outlined'
-            placeholder={'Digite seu nome...'}
-            fullWidth
-            margin={'normal'}
-            onChange={handleChange}
-            value={subscription.name}
-            className={txtStyles.root}
-            error={error.nameError}
-            helperText={(error && error.name) ?? ""}
-          />
+      <Slide direction="left" timeout={500} in={!checked} mountOnEnter unmountOnExit>
+        <Grid container justifyContent='center'>
+          <Grid item xs={12} md={10}>
+            <TextField
+              id='txtName'
+              name='name'
+              variant='outlined'
+              placeholder={'Digite seu nome...'}
+              fullWidth
+              margin={'normal'}
+              onChange={handleChange}
+              value={subscription.name}
+              className={txtStyles.root}
+              error={error.nameError}
+              helperText={(error && error.name) ?? ""}
+            />
+          </Grid>
+          <Grid item xs={12} md={10}>
+            <TextField
+              id='txtEmail'
+              name='email'
+              variant='outlined'
+              placeholder={'Digite seu melhor e-mail...'}
+              fullWidth
+              type="email"
+              margin={'normal'}
+              onChange={handleChange}
+              value={subscription.email}
+              className={txtStyles.root}
+              error={error.emailError}
+              helperText={(error && error.email) ?? ""}
+            />
+          </Grid>
+          <Grid item xs={12} md={10} className={gutterStyles.parent}>
+            <GradientButton onClick={handleClick}>
+              QUERO ME INSCREVER!
+            </GradientButton>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={10}>
-          <TextField
-            id='txtEmail'
-            name='email'
-            variant='outlined'
-            placeholder={'Digite seu melhor e-mail...'}
-            fullWidth
-            type="email"
-            margin={'normal'}
-            onChange={handleChange}
-            value={subscription.email}
-            className={txtStyles.root}
-            error={error.emailError}
-            helperText={(error && error.email) ?? ""}
-          />
-        </Grid>
-        <Grid item xs={12} md={10} className={gutterStyles.parent}>
-          <GradientButton onClick={handleClick}>
-            QUERO ME INSCREVER!
-          </GradientButton>
-        </Grid>
-      </Grid>
+      </Slide>
     </div>
   );
 }
