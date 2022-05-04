@@ -11,10 +11,12 @@
 
 .wtp-description {
   margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: var(--main-dark-color2);
 }
 
 .wtp-title {
-  background-color: var(--main-dark-color2);
+  background-color: var(--main-dark-color1);
   font-weight: bold;
   color: var(--back-color);
   margin: 1rem auto;
@@ -24,6 +26,7 @@
 
 .wtp-subtitle {
   margin: 1rem;
+  color: var(--main-dark-color2);
 }
 
 @media screen and (max-width: 768px) {
