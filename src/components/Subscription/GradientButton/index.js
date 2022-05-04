@@ -10,13 +10,13 @@ const useBtnStyles = makeStyles({
     transition: '0.3s cubic-bezier(.47,1.64,.41,.8)',
     marginTop: '1rem',
     background:
-      `linear-gradient(to right, ${colors.primary}, ${colors.primaryDark})`,
+      `linear-gradient(to right, ${colors.btnLight}, ${colors.btnDark})`,
     '&:hover': {
       transform: 'scale(1.1)',
     },
   },
   label: {
-    color: `${colors.light}`,
+    color: `${colors.btnLabel}`,
     textTransform: 'none',
     fontSize: 15,
     fontWeight: 700,

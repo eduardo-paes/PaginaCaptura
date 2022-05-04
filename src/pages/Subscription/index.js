@@ -7,7 +7,7 @@ const descricaoFinal = "Desperte seu intestino e livre-se da TPM.";
 const dataEvento = () => {
   return (
     <p>
-      DIA <strong>11</strong> DE MAIO | ÀS <strong>20H00</strong>
+      DIA <strong>18</strong> DE MAIO | ÀS <strong>20H30</strong>
     </p>
   );
 }
