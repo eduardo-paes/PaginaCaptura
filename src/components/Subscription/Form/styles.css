@@ -1,6 +1,6 @@
 .register-form {
   padding: 3rem;
-  background-color: #fff;
+  background-color: var(--back-color);
 }
 
 @media screen and (max-width: 768px) {

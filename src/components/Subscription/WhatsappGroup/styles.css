@@ -1,8 +1,8 @@
 .wtp-container {
   padding: 3rem;
-  background-color: #5a0f34;
+  background-color: var(--back-color);
   font-family: 'Raleway', sans-serif;
-  color: #f3f4f4;
+  color: var(--main-dark-color2);
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -14,9 +14,9 @@
 }
 
 .wtp-title {
-  background-color: #f3f4f4;
+  background-color: var(--main-dark-color2);
   font-weight: bold;
-  color: #5a0f34;
+  color: var(--back-color);
   margin: 1rem auto;
   padding: 1rem;
   width: fit-content;

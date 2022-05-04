@@ -1,7 +1,7 @@
 .register-final-message {
   padding: 0 3rem 3rem 3rem;
   font-family: 'Raleway', sans-serif;
-  color: #5a0f34;
+  color: var(--main-dark-color2);
   text-align: center;
 }
 

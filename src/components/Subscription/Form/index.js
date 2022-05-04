@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import './styles.css';
 import api from '../../../api';
-import colors from '../../../assets/colors';
 import { Grid, Slide, TextField} from '@material-ui/core';
 import { usePushingGutterStyles } from '@mui-treasury/styles/gutter/pushing';
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,24 +10,24 @@ import GradientButton from '../GradientButton';
 const useStyles = makeStyles((theme) => ({
   root: {
     "& .MuiInputBase-root": {
-      color: `${colors.primaryDark}`, //or try theme.palette.primary.main
-      backgroundColor: `${colors.light}`, //It should be white by default
+      color: `var(--back-color)`, //or try theme.palette.primary.main
+      backgroundColor: `var(--main-dark-color2)`, //It should be white by default
     },
     '& label.Mui-focused': {
-      color: `${colors.light}`,
+      color: `var(--main-dark-color2)`,
     },
     '& .MuiInput-underline:after': {
-      borderBottomColor: `${colors.primary}`,
+      borderBottomColor: `var(--main-light-color2)`,
     },
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
-        borderColor: `${colors.light}`,
+        borderColor: `var(--main-dark-color2)`,
       },
       '&:hover fieldset': {
-        borderColor: `${colors.light}`,
+        borderColor: `var(--main-dark-color2)`,
       },
       '&.Mui-focused fieldset': {
-        borderColor: `${colors.primary}`,
+        borderColor: `var(--main-light-color2)`,
       },
     },
   },

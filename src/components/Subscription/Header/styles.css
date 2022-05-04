@@ -4,8 +4,7 @@
   background-size: cover;
   background-position: center;
   font-family: 'Raleway', sans-serif;
-  color: #5a0f34;
-  /* text-shadow: 2px 2px #58344f; */
+  color: var(--main-dark-color2);
   position: relative;
   padding: 3rem;
 }
@@ -16,13 +15,13 @@
   left: 0;
   width: 100%;
   height: 9rem;
-  background: -moz-linear-gradient(top,  rgba(137,255,241,0) 0%, #fff 100%); 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(137,255,241,0)), color-stop(100%,#fff)); 
-  background: -webkit-linear-gradient(top,  rgba(137,255,241,0) 0%, #fff 100%); 
-  background: -o-linear-gradient(top,  rgba(137,255,241,0) 0%, #fff 100%); 
-  background: -ms-linear-gradient(top,  rgba(137,255,241,0) 0%, #fff 100%); 
-  background: linear-gradient(to bottom,  rgba(255, 137, 182, 0) 0%, #fff 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); 
+  background: -moz-linear-gradient(top,  rgba(137,255,241,0) 0%, var(--back-color) 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(137,255,241,0)), color-stop(100%,var(--back-color))); 
+  background: -webkit-linear-gradient(top,  rgba(137,255,241,0) 0%, var(--back-color) 100%); 
+  background: -o-linear-gradient(top,  rgba(137,255,241,0) 0%, var(--back-color) 100%); 
+  background: -ms-linear-gradient(top,  rgba(137,255,241,0) 0%, var(--back-color) 100%); 
+  background: linear-gradient(to bottom,  rgba(255, 137, 182, 0) 0%, var(--back-color) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--back-color), endColorstr=var(--back-color),GradientType=0 ); 
 }
 
 h1 {
@@ -38,12 +37,12 @@ h2 {
 
 p {
   font-size: 1.5rem;
-  color: #03989e;
+  color: var(--main-light-color1);
 }
 
 @media screen and (max-width: 960px) {
   .register-title {
-    color: #5a0f34;
+    color: var(--main-dark-color2);
     margin: 0;  
     padding: 0;
   }

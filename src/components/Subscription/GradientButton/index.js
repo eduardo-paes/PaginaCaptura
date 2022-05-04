@@ -1,6 +1,5 @@
 /* eslint-disable no-useless-escape */
 import React from 'react';
-import colors from '../../../assets/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 
@@ -10,13 +9,13 @@ const useBtnStyles = makeStyles({
     transition: '0.3s cubic-bezier(.47,1.64,.41,.8)',
     marginTop: '1rem',
     background:
-      `linear-gradient(to right, ${colors.btnLight}, ${colors.btnDark})`,
+      `linear-gradient(to right, var(--main-light-color1), var(--main-dark-color1))`,
     '&:hover': {
       transform: 'scale(1.1)',
     },
   },
   label: {
-    color: `${colors.btnLabel}`,
+    color: `var(--back-color)`,
     textTransform: 'none',
     fontSize: 15,
     fontWeight: 700,

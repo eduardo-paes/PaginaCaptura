@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --back-color: #fff;
+  --main-dark-color1: #02585b;
+  --main-light-color1: #03989e;
+  --main-dark-color2: #5a0f34;
+  --main-light-color2: #ff027f;
 }
 
 .main-root {
-  background-color: #fff;
+  background-color: var(--back-color);
 }
 
 @media only screen and (max-width: 1200px) {
